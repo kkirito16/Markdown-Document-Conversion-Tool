@@ -1,0 +1,26 @@
+export function createSampleHtml(): string {
+  return [
+    '<div data-page-id="demo">',
+    '<h1>飞书语法校对稿</h1>',
+    '<h2>标题与行内</h2>',
+    '<div>段落里有<strong>加粗</strong>、<em>斜体</em>、<u>下划线</u>、<s>删除线</s>、<code>inline()</code>和<a href="https://www.feishu.cn">链接</a>。</div>',
+    '<h3>任务与列表</h3>',
+    '<ul><li data-list="bullet">无序一项<ul><li data-list="bullet">嵌套一项</li></ul></li></ul>',
+    '<ol start="1"><li data-list="number">有序一项</li><li data-list="number">有序二项</li></ol>',
+    '<ul><li data-list="unchecked"><input type="checkbox"> 未完成任务</li><li data-list="checked"><input type="checkbox" checked> 已完成任务</li></ul>',
+    '<div>提到了<span class="lark-mention">林间</span>。</div>',
+    '<div class="docx-file"><a href="https://example.com/spec.pdf">规格说明书.pdf</a></div>',
+    '<div class="docx-grid"><div>左栏</div><div>右栏</div></div>',
+    '<div class="zoneType-bitable">项目跟踪表</div>',
+    '<h4>引用、代码、公式</h4>',
+    '<blockquote>引用应变成 &gt; 开头。</blockquote>',
+    '<pre class="language-javascript">const ok = true;\nconsole.log(ok);</pre>',
+    '<span data-formula="E=mc^2">E=mc^2</span>',
+    '<h5>高亮块与表格</h5>',
+    '<div class="zoneType-calloutBlock"><div class="callout-block">这是飞书高亮块，应输出 GitHub Alert。</div></div>',
+    '<div><table class="ace-table"><tr><th>列 A</th><th>列 B</th></tr><tr><td>1</td><td>2</td></tr></table></div>',
+    '<hr>',
+    '<h9>九级标题应保留</h9>',
+    '</div>',
+  ].join('')
+}
